@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="wrapper">
+        <div class="header">
+          <h1 class="title">Movie Recommendation</h1>
+          <p class="subtitle">
+            Find your perfect movie based on your preferences
+          </p>
+        </div>
+        <div class="card">
+          <div class="form">
+            <div class="form-group">
+              <label for="genre" class="label">Genre</label>
+              <select name="genre" id="genre" class="select">
+                <option value="">Select Genre</option>
+                <option value="Action">Action</option>
+                <option value="Comedy">Comedy</option>
+                <option value="Drama">Drama</option>
+                <option value="Horror">Horror</option>
+                <option value="Sci-Fi">Sci-Fi</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="duration" class="label">Duration</label>
+              <select id="duration" name="duration" class="select">
+                <option value="">Select Duration</option>
+                <option value="Short">Short (under 90 minutes)</option>
+                <option value="Medium">Medium (90-120 minutes)</option>
+                <option value="Long">Long (over 120 minutes)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="mood" class="label">Mood</label>
+              <select id="mood" name="mood" class="select">
+                <option value="">Select Mood</option>
+                <option value="Happy">Happy</option>
+                <option value="Relaxed">Relaxed</option>
+                <option value="Excited">Excited</option>
+                <option value="Adventurous">Adventurous</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn">Find Your Movie</button>
+        </div>
+        <div id="recommendation" class="recommendation hidden"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
